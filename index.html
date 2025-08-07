@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박성호 - 자동화 개발자 포트폴리오</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-robot"></i>
+                <span>박성호</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">홈</a></li>
+                <li><a href="#about">소개</a></li>
+                <li><a href="#skills">기술</a></li>
+                <li><a href="#projects">프로젝트</a></li>
+                <li><a href="#experience">경력</a></li>
+                <li><a href="#contact">연락처</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    안녕하세요, 저는 테스트 자동화 개발자
+                    박성호입니다
+                </h1>
+                <p class="hero-description">
+                    Selenium, Appium, Playwright를 통해<br>
+                    자동화 테스트를 운영 및 개발합니다
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('projects')">프로젝트 보기</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">연락하기</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="automation-animation">
+                    <div class="robot-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="process-flow">
+                        <div class="flow-item">
+                            <i class="fas fa-database"></i>
+                            <span>데이터 수집</span>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>자동 처리</span>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>결과 분석</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>QA 및 프론트 경험으로 자동화를 운영 및 개발</h3>
+                    <p>
+                        5년간의 IT 경험을 바탕으로 Playwright, Appium, Selenium 기반으로 
+                        Python, JavaScript 등을 활용한 테스트 자동화 구축 및 운영하며,                     
+                        하이브리드 앱(AOS, iOS)과 모바일 웹 환경에서의 실서비스 테스트 자동화를 경험했습니다.
+                    </p>
+                    <p>
+                        JenKins, Git & CI 파이프라인 통합 등 기술적 난제를 해결한 경험을 통해 
+                        유지보수성과 안정성을 확보하는데 주력했습니다
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">테스트 시나리오 설계</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5년</span>
+                            <span class="stat-label">IT 경력</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=500&fit=crop&crop=center" alt="자동화 개발자" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">기술 스택</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-robot"></i> 테스트 프레임워크</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Playwright</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Selenium</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Appium</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> 언어</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>TypeScript</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-spider"></i> 협업 툴</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Jira</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Confluence</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 87%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>git</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> 테스트플랫폼</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>AOS</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>iOS</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Web</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <span>하이브리드 앱</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">주요 프로젝트</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop&crop=center" alt="재무 데이터 자동화" loading="lazy">
+                        <div class="project-overlay">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>유플러스 테스트 자동화</h3>
+                        <p>Selenium, Appium을 활용한 테스트 자동화 </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Appium</span>
+                            <span>Slack</span>
+                        </div>
+                        <div class="project-results">
+                            <span><i class="fas fa-check"></i> 운영 및 유지보수</span>
+                            <span><i class="fas fa-star"></i> 멀티 모듈 아키텍처</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=250&fit=crop&crop=center" alt="고객 서비스 자동화" loading="lazy">
+                        <div class="project-overlay">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>유플러스 차세대 테스트 자동화 시스템 개발</h3>
+                        <p>PlayWright 개발 및 운영</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Appium</span>
+                            <span>git</span>
+                        </div>
+                        <div class="project-results">
+                            <span><i class="fas fa-users"></i> 개발 및 운영</span>
+                            <span><i class="fas fa-star"></i> 모노레포 아키텍처</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop&crop=center" alt="웹 스크래핑 시스템" loading="lazy">
+                        <div class="project-overlay">
+                            <i class="fas fa-spider"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>하나머니 운영</h3>
+                        <p>하나머니 프론트 유지보수 및 테스트 자동화 운영 </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-results">
+                            <span><i class="fas fa-database"></i>프론트 운영</span>
+                            <span><i class="fas fa-robot"></i>테스트 자동화 운영</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">경력 사항</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025.2 - 2025.8</div>
+                        <h3>시니어 자동화 개발자</h3>
+                        <h4>유플러스</h4>
+                        <p>
+                            • Selenium 테스트 자동화 운영 및 유지보수<br>
+                            • Playwright 테스트 자동화 개발<br>
+                            • 신규개발건 테스트 자동화 구현 및 운영
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024.10 - 2025.1</div>
+                        <h3>QA</h3>
+                        <h4>SKT</h4>
+                        <p>
+                            • 신규 프로젝트 테스트 설계 및 검증<br>
+                            • 신규 클라우트 서비스 설계 및 검증<br>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2019 - 2021</div>
+                        <h3>주니어 개발자</h3>
+                        <h4>하나머니</h4>
+                        <p>
+                            • 프론트 개발<br>
+                            • 자동화 스크립트 유지보수<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">연락처</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>함께 일하고 싶은 자동화 프로젝트가 있으신가요?</h3>
+                    <p>테스트 자동화 솔루션을 함께 만들어보세요.</p>
+                    <div class="contact-details">
+                        <button class="contact-toggle-btn" onclick="toggleContact()">
+                            <i class="fas fa-eye"></i>
+                            <span>연락처 보기</span>
+                        </button>
+                        <div class="contact-items" id="contactItems" style="display: none;">
+                            <div class="contact-item" onclick="copyToClipboard('mofat777@gmail.com')" style="cursor: pointer;">
+                                <i class="fas fa-envelope"></i>
+                                <span>mofat777@gmail.com</span>
+                                <i class="fas fa-copy" style="margin-left: auto; font-size: 0.9rem; opacity: 0.7;"></i>
+                            </div>
+                            <div class="contact-item" onclick="copyToClipboard('010-1234-5678')" style="cursor: pointer;">
+                                <i class="fas fa-phone"></i>
+                                <span>010-4691-3525</span>
+                                <i class="fas fa-copy" style="margin-left: auto; font-size: 0.9rem; opacity: 0.7;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://usebasin.com/f/contact-form" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="이름" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="이메일" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="company" placeholder="회사명">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="프로젝트에 대해 설명해주세요" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">메시지 보내기</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-robot"></i>
+                        <span>박성호</span>
+                    </div>
+                    <p>UI/UX E2E 테스트 자동화 시스템을 운영 및 개발 하는 개발자</p>
+                </div>
+                <div class="footer-section">
+                    <h4>빠른 링크</h4>
+                    <ul>
+                        <li><a href="#home">홈</a></li>
+                        <li><a href="#about">소개</a></li>
+                        <li><a href="#projects">프로젝트</a></li>
+                        <li><a href="#contact">연락처</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>기술 스택</h4>
+                    <ul>
+                        <li>Python</li>
+                        <li>Selenium</li>
+                        <li>Playwright</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>소셜 미디어</h4>
+                    <!-- <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div> -->
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 박성호. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
