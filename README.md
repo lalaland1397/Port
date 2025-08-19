@@ -1,7 +1,7 @@
 # 🚀 개발자 포트폴리오
 
 안녕하세요! 저는 **웹 개발자**입니다.  
-현대적이고 반응형 웹사이트를 제작하는 것을 좋아하며, 사용자 경험을 중시하는 개발을 지향합니다.
+반응형 웹사이트를 제작하고 자동화 시스템을 개발하는 개발자 입니다.
 
 ## ✨ 프로젝트 소개
 
@@ -11,7 +11,7 @@
 ## 🎯 주요 특징
 
 ### 🎨 디자인
-- **미니멀한 디자인**: 깔끔하고 현대적인 UI/UX
+- **미니멀한 디자인**: 깔끔한 UI/UX
 - **반응형 웹**: 모든 디바이스에서 최적화된 경험
 - **부드러운 애니메이션**: CSS3와 JavaScript를 활용한 인터랙티브 요소
 - **그라데이션 효과**: 시각적으로 매력적인 색상 조합
@@ -107,7 +107,6 @@ http://localhost:8000
 - Chrome (최신 버전)
 - Firefox (최신 버전)
 - Safari (최신 버전)
-- Edge (최신 버전)
 
 ## 🎨 커스터마이징
 
@@ -146,10 +145,7 @@ Google Fonts에서 다른 폰트를 선택하여 적용할 수 있습니다.
 ## 🤝 기여하기
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+
 
 ## 📄 라이선스
 
@@ -158,10 +154,6 @@ Google Fonts에서 다른 폰트를 선택하여 적용할 수 있습니다.
 ## 📞 연락처
 
 프로젝트에 대한 문의사항이나 협업 제안이 있으시면 언제든지 연락해 주세요.
-
-- **Email**: [your-email@example.com]
-- **GitHub**: [your-github-username]
-- **LinkedIn**: [your-linkedin-profile]
 
 ---
 
