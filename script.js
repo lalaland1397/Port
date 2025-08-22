@@ -1,7 +1,9 @@
 // 네비게이션 바 스크롤 효과
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 50) {
+    const triggerPoint = 150; // 스크롤 몇 px 내려가야 동작할지 설정
+
+    if (window.scrollY > triggerPoint) {
         navbar.classList.add('scrolled');
     } else {
         navbar.classList.remove('scrolled');
