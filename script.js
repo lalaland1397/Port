@@ -333,42 +333,6 @@ function getPreviousSection(currentSection) {
     return sections[currentIndex - 1] || null;
 }
 
-// 터치 스와이프 지원 (모바일)
-let touchStartY = 0;
-let touchEndY = 0;
-
-document.addEventListener('touchstart', function(e) {
-    touchStartY = e.changedTouches[0].screenY;
-});
-
-document.addEventListener('touchend', function(e) {
-    touchEndY = e.changedTouches[0].screenY;
-    handleSwipe();
-});
-
-function handleSwipe() {
-    const swipeThreshold = 50;
-    const diff = touchStartY - touchEndY;
-    
-    if (Math.abs(diff) > swipeThreshold) {
-        if (diff > 0) {
-            // 위로 스와이프 - 다음 섹션
-            const currentSection = getCurrentSection();
-            const nextSection = getNextSection(currentSection);
-            if (nextSection) {
-                scrollToSection(nextSection.id);
-            }
-        } else {
-            // 아래로 스와이프 - 이전 섹션
-            const currentSection = getCurrentSection();
-            const prevSection = getPreviousSection(currentSection);
-            if (prevSection) {
-                scrollToSection(prevSection.id);
-            }
-        }
-    }
-}
-
 // 연락처 토글 기능
 function toggleContact() {
     const contactItems = document.getElementById('contactItems');
